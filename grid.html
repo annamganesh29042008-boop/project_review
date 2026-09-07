@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 250px 130px;
+
+  gap: 20px;
+  font-family: sans-serif;
+
+  width: 900px;
+  margin: 30px auto;
+}
+
+.item {
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* Header - RED */
+.header-item {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: red;
+}
+
+/* Sidebar - BLUE */
+.sidebar-item {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background-color: blue;
+}
+
+/* Main Content - GREEN */
+.main-item {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background-color: green;
+}
+
+/* Extra Card - GOLD */
+.extra-item {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  background-color: gold;
+  color: black;
+}
+</style>
+</head>
+
+<body>
+
+<div class="grid-container">
+
+  <div class="item header-item">
+    Header (Spans 1 to 4)
+  </div>
+
+  <div class="item sidebar-item">
+    Sidebar (Spans Row 2 to 4)
+  </div>
+
+  <div class="item main-item">
+    Main Content
+  </div>
+
+  <div class="item extra-item">
+    Extra Card
+  </div>
+
+</div>
+
+</body>
+</html>
